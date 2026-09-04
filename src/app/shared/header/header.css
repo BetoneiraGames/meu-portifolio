@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  background-color: #5d7a82;
+  font-family: sans-serif;
+}
+
+.header h2 {
+  color: #0d111e;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-menu button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-menu button:hover {
+  background-color: rgba(13, 17, 30, 0.2);
+}
+
+/* Estado ativo do botão (Pílula escura como no protótipo) */
+.nav-menu button.active {
+  background-color: #0d111e;
+  color: #ffffff;
+  font-weight: 600;
+}

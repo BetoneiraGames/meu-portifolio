@@ -1,6 +1,24 @@
-<h2>{{nome}}</h2>
+<header class="header">
+  <h2 class="logo">{{nome}}</h2>
 
-<button routerLink="/"> Inicio </button>
-    <button routerLink="/sobremim"> Sobre mim </button>
-    <button routerLink="/contatos"> Contatos </button>
-    
+  <nav class="nav-menu">
+    <button 
+      routerLink="/" 
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{ exact: true }">
+      Início
+    </button>
+
+    <button 
+      routerLink="/sobremim" 
+      routerLinkActive="active">
+      Sobre mim
+    </button>
+
+    <button 
+      routerLink="/contatos" 
+      routerLinkActive="active">
+      Contatos
+    </button>
+  </nav>
+</header>

@@ -1,0 +1,129 @@
+/* Container Geral da Tela */
+.sobre-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #f8fafc;
+}
+
+/* Layout Flexbox Hero (Avatar + Informações) */
+.hero-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* Avatar / Foto */
+.avatar-wrapper {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.avatar-icon {
+  width: 100%;
+  height: 100%;
+}
+
+/* Bloco de Informações */
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.nome {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.subtitulo {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+  color: #e2e8f0;
+}
+
+/* Cards Estilizados (Fundo cinza-azulado do protótipo) */
+.card {
+  background-color: #828ca1;
+  border-radius: 16px;
+  padding: 1.5rem 1.8rem;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bio-card p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Seção Objetivo Profissional */
+.objetivo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.secao-titulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.objetivo-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.objetivo-card p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.social-btn{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .avatar-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}

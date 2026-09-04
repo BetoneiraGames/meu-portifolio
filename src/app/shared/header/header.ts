@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
-import { inject } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  imports: [RouterLink],
   selector: 'app-header',
-  styleUrl: './header.css',
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.html',
+  styleUrl: './header.css',
 })
 export class Header {
-  nome = "Meu Portfolio"
+  nome = "Meu Portfolio";
   private router = inject(Router);
-
 }
